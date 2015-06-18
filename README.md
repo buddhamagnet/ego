@@ -1,12 +1,20 @@
-### Ego - Economist content service.
+### EGO
+
+This repository is based on a prototype I built at work designed to decouple
+our back end from a set of standalone front ends, and to allow us to plug in
+additional back ends.
+
+The API is wired up by reading a RAML (REST API Modelling Language) file
+using a package I built.
 
 #### SERVICE SETUP
 
 1. Clone this repository into your GOPATH.
 2. Run `godep restore` to get the minimal dependencies.
 3. Run `make build` to drop the binary into the build folder.
-4. Run `build/ego` and hit localhost:9494.
-5. Run `build/ego --port=<port>``` if you want another port.
+4. Copy samples/.env into the build folder.
+5. Run `build/ego` and hit localhost:9494.
+6. Run `build/ego --port=<port>``` if you want another port.
 
 ### MAKEFILE
 
