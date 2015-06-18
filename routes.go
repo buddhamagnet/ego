@@ -10,10 +10,6 @@ import (
 
 var router *mux.Router
 
-var RouteSet = map[string]string{
-	"blog listings": "/content/blogs/{blog_path}",
-}
-
 var RouteMap = map[string]http.HandlerFunc{
 	"RootHandler":    RootHandler,
 	"ContentHandler": ContentHandler,

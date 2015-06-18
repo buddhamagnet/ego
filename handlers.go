@@ -12,7 +12,7 @@ import (
 
 // Roothandler - root endpoint.
 func RootHandler(w http.ResponseWriter, r *http.Request) {
-	json, _ := json.Marshal(RouteSet)
+	json, _ := json.Marshal("UP!")
 	w.Write(json)
 }
 
