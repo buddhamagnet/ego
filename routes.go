@@ -35,8 +35,10 @@ func NewRouter() *mux.Router {
 func assembleMiddleware(r *mux.Router) {
 	http.Handle("/",
 		JsonMiddleware(
-			LoggingMiddleware(
-				RecoverMiddleware(r))))
+			EgoMiddleware(
+				OriginMiddleware(
+					LoggingMiddleware(
+						RecoverMiddleware(r))))))
 }
 
 func routerFunc(verb, resourcepath, handler string) {
