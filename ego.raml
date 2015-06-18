@@ -1,0 +1,20 @@
+#%RAML 0.8
+title: ego
+version: 1
+
+baseUri: http://github.com/EconomistDigitalSolutions/ego
+documentation:
+  -  title: Overview
+
+/:
+  description: root hypermedia endpoint.
+  get:
+    displayName: RootHandler
+/content/{content}/{path:.+}:
+  description: blog path.
+  get:
+    displayName: ContentHandler
+/content/{content}:
+  description: content path.
+  get:
+    displayName: ContentHandler

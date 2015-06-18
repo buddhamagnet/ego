@@ -1,0 +1,36 @@
+{
+	"ImportPath": "github.com/EconomistDigitalSolutions/ego",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.8.2-2-g6ba91e2",
+			"Rev": "6ba91e24c498b49d0363c723e9e2ab2b5b8fd012"
+		},
+		{
+			"ImportPath": "github.com/buddhamagnet/gman/ramlapi",
+			"Rev": "caa6c3ba36f176720451a933c8b73edecc94b948"
+		},
+		{
+			"ImportPath": "github.com/buddhamagnet/raml",
+			"Rev": "685a1e38a80e22bc6c9f213b7c0b8e2aa30f7ae6"
+		},
+		{
+			"ImportPath": "github.com/buddhamagnet/yaml",
+			"Rev": "e401b2b026855a4fa8e7014d553ae5bdfccb21cd"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "94903de8c98a68d8b4483c529b26a5d146e386a2"
+		},
+		{
+			"ImportPath": "github.com/joho/godotenv",
+			"Comment": "v1-6-gf658182",
+			"Rev": "f6581828bb37238bc1ce8e561d9e4050630a304d"
+		}
+	]
+}
